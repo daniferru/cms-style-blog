@@ -11,4 +11,4 @@ router.use((req, res) => {
     res.status(404).end();
 });
 
-model.exports = router;
+module.exports = router;
