@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CMS Style Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="wrapper">
         <header>
-            <h1>CMS Style Tech Blog</h1>
+            <h1 class="title">CMS Style Tech Blog<i class="large material-icons">laptop_mac</i></h1>
             <nav>
                 {{#if loggedIn}}
                 <a href="/">Homepage</a>
@@ -19,10 +23,10 @@
                 {{else}}
                 <a href="/">Homepage</a>
                 <a href="/login">Login</a>
-                {{if}}
+                {{/if}}
             </nav>
         </header>
-        <main>
+        <main class="center">
             {{{ body }}}
         </main>
     </div>

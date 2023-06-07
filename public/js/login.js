@@ -5,7 +5,7 @@ async function loginHandler(event) {
     const password = document.querySelector('#pw-login').value.trim();
 
     if (email && password) {
-        const response = await fetch('/api/user', {
+        const response = await fetch('/api/user/login', {
             method: 'POST',
             body: JSON.stringify({
                 email,
@@ -31,7 +31,7 @@ async function signupHandler(event) {
     const password = document.querySelector('#create-pw').value.trim();
 
     if (username && email && password) {
-        const response = await fetch('/api/users/login', {
+        const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
                 username,
