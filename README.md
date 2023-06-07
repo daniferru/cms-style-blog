@@ -10,8 +10,8 @@ This application follows the MVC paradigm in it's structure and uses Handlebars.
 
 ## Usage
 This application allows user to sign up if they are not a member, once they are loged in they are able to view their dashboard of posts to view, add, edit, and delete blog posts and comment on other developers post.
-<img src="/images/loginpage.PNG">
-<img src="/images/createpostpg.PNG">
+<img src="/public/images/loginpage.PNG">
+<img src="/public/images/createpostpg.PNG">
 
 ## License
 This application is licensed under the MIT license.
